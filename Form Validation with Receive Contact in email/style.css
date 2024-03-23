@@ -1,0 +1,114 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family:"Poppins", sans-serif;
+}
+body
+{
+    background-color: #1b264f;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form
+{ 
+    width: fit-content;
+    background-color: #fff;
+    padding: 30px 10px;
+    border-radius: 5px;
+    position: relative;
+    height: 380px;
+}
+form .input-group
+{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.input-group input
+{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 60%;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+.input-group label
+{
+    padding: 15px 10px;
+}
+.input-group textarea
+{
+    resize: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    font-size: 15px;
+    width: 67%; 
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+}
+
+form button
+{
+    display:inline-block;
+    position:relative;
+    text-align: center;
+    width: 60%;
+    padding: 10px 20px;
+    left:20%;
+    top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1b264f;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+form .fa-paper-plane
+{
+    background-color:#fff;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -35px;
+    z-index: 2;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+   
+}
+.input-group span
+{
+    position: absolute;
+    right: 12px;
+    bottom:15px;
+    color: red;
+}
+#submit-error
+{
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    color: red;
+}
+.input-group span i
+{
+    color: seagreen;
+}

@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+body
+{
+    background-color: #bbc6fa;
+}
+
+.box
+{
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    padding:20px 30px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
+}
+.box h2
+{
+    margin-bottom: 30px;
+    font-size: 25px;
+    position: relative;
+    font-weight: 900;
+}
+h2::after
+{
+    content: '';
+    position: absolute;
+    background-color:#1da1f2;
+    width: 60px;
+    height: 3px;
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+.box blockquote 
+{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+blockquote::after,blockquote::before
+{
+    content: '"';
+}
+.box span
+{
+    display: block;
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+}
+span::before
+{
+    content: '';
+    background-color: #1da1f2;
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    top: 50%;
+    left: -25px;
+    border-radius: 10px;
+}
+.box div{
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content:center;
+}
+div button
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #1da1f2;
+    border: none;
+    outline: none;
+    margin:0 10px;
+    color: #fff;
+    border-radius: 20px;
+    width: 130px;
+    height: 40px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+button:nth-child(2)
+{
+    background-color: transparent;
+    color: #1da1f2;
+    border: 1px solid #1da1f2;
+}
+button i
+{
+    font-size: 18px;
+    padding-right: 5px;
+}
